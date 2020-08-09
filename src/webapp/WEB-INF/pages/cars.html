@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Cars</title>
+    <title></title>
 </head>
 <body>
-<!--<ul>-->
-<!--    <li>-->
-<!--        <a href="/cars?locale=en" data-th-text="#{label.locale.en}"></a>-->
-<!--    </li>-->
-<!--    <li>-->
-<!--        <a href="/cars?locale=ru" data-th-text="#{label.locale.ru}"></a>-->
-<!--    </li>-->
-<!--</ul>-->
-
-<!--<div>-->
-<!--    <th:block th:each="msg : ${cars}">-->
-<!--        <h1 th:text="${msg}"></h1>-->
-<!--    </th:block>-->
-<!--</div>-->
-
+<ul>
+        <p th:text="${title}"></p>
+</ul>
 <div>
-    <th:block th:each="msg : ${messages}">
-        <h1 th:text="${msg}"></h1>
-    </th:block>
+    <hr>
+    <p th:text="${cars[0].name}">Nothing</p>
+    <p th:text="${cars[0].series}">Nothing</p>
+    <hr>
+    <p th:text="${cars[1].name}">Nothing</p>
+    <p th:text="${cars[1].series}">Nothing</p>
+    <hr>
+    <p th:text="${cars[2].name}">Nothing</p>
+    <p th:text="${cars[2].series}">Nothing</p>
 </div>
 
 </body>
